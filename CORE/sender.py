@@ -1,8 +1,10 @@
+"""module importing smtp library for sending emails"""
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_email(sender_email, sender_password, recipient_email, subject, body):
+    '''defining the send email function'''
     try:
         smtp_server = "YOUR_SMTP_SERVER"  # Replace with your SMTP server details
         smtp_port = 587  # Update port if needed (exc.g., 465 for SSL/TLS)
@@ -32,4 +34,3 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
 
     except Exception as exc:
         print(f"Error: {exc}")
-        

@@ -1,4 +1,5 @@
-import sender
+'''Importing the send email functionality'''
+from sender import send_email
 
 if __name__ == "__main__":
     sender_email = "YOUR_EMAIL@gmail.com"

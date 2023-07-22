@@ -2,8 +2,8 @@
 from sender import send_email
 
 if __name__ == "__main__":
-    sender_email = "YOUR_EMAIL@gmail.com"
-    sender_password = "YOUR_PASSWORD"
+    sender_email = "SENDER_EMAIL" #REPLACE WITH SENDER EMAIL ADDRESS
+    sender_password = "SENDER_PASSWORD" #REPLACE WITH SENDER EMAIL PASSWORD - EXPORT REF FOR SECURITY
 
     recipients = [
         "recipient1@example.com",

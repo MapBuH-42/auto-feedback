@@ -21,7 +21,7 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
         message["Subject"] = subject
 
         # Replace {custom_text} with the actual customizable text
-        body = body.replace("{custom_text}", "This is customizable text for recipient.")
+        body = body.replace("{custom_text}", "This is customizable text for recipient.") #REPLACE THE TEXT WITH THE FEEDBACK GENERATED FROM CHECK MODULE
 
         message.attach(MIMEText(body, "plain"))
 

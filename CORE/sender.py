@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 def send_email(sender_email, sender_password, recipient_email, subject, body):
     '''defining the send email function'''
     try:
-        smtp_server = "YOUR_SMTP_SERVER"  # Replace with your SMTP server details
+        smtp_server = "smtp.gmail.com"  # Replace with your SMTP server details
         smtp_port = 587  # Update port if needed (exc.g., 465 for SSL/TLS)
 
         # Create a secure connection to the SMTP server
@@ -22,6 +22,7 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
 
         # Replace {custom_text} with the actual customizable text
         body = body.replace("{custom_text}", "This is customizable text for recipient.") #REPLACE THE TEXT WITH THE FEEDBACK GENERATED FROM CHECK MODULE
+        body = body.replace("{recipient}", "Name of recipient") #REPLACE WITH RECIPIENT NAME FROM CHECK MODULE
 
         message.attach(MIMEText(body, "plain"))
 

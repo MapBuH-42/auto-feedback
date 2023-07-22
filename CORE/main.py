@@ -2,18 +2,16 @@
 from sender import send_email
 
 if __name__ == "__main__":
-    sender_email = "SENDER_EMAIL" #REPLACE WITH SENDER EMAIL ADDRESS
-    sender_password = "SENDER_PASSWORD" #REPLACE WITH SENDER EMAIL PASSWORD - EXPORT REF FOR SECURITY
+    sender_email = "auto.test.feedback.bot@gmail.com" #REPLACE WITH SENDER EMAIL ADDRESS
+    sender_password = "zYSd.6hLQUrtS$A" #REPLACE WITH SENDER EMAIL PASSWORD - EXPORT REF FOR SECURITY
 
     recipients = [
-        "recipient1@example.com",
-        "recipient2@example.com",
-        "recipient3@example.com",
+        "x.termal@gmail.com"
     ]
 
     subject = "Customizable Email"
     body = """
-    Dear recipient,
+    Dear {recipient},
 
     This is a sample email with customizable text: {custom_text}.
 
